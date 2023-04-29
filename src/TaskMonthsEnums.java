@@ -12,7 +12,7 @@ public class TaskMonthsEnums {
   // именно времени года относится выбранный месяц. Усовершенствуйте программу так, чтобы число
   // дней в месяце читалось из файла res/months.csv и сохранялось в Map<Month, Integer>.
   public static void main(String[] args) throws IOException {
-    HashMap<String, Integer> months = readingFile(new File("hw_27_04/res/months.csv"));
+    HashMap<String, Integer> months = readingFile(new File("res/months.csv"));
     String parseMonth = parseMonth(months);
     Seasons parseSeason = parseSeason(parseMonth);
     System.out.print("In " + parseMonth + " - " + months.get(parseMonth) + " days, ");
